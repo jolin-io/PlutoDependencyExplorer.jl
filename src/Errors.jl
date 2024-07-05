@@ -23,7 +23,7 @@ function MultipleDefinitionsError(topology::NotebookTopology, cell::AbstractCell
 	)
 end
 
-const _hint1 = "Combine all definitions into a single reactive cell using a `begin ... end` block."
+const _hint1 = "Combine all definitions into a single reactive cell."
 
 # TODO: handle case when cells are in cycle, but variables aren't
 function showerror(io::IO, cre::CyclicReferenceError)
