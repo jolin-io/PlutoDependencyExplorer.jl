@@ -31,8 +31,6 @@ function MultipleDefinitionsError(topology::NotebookTopology, cell::AbstractCell
 			((funcdef.name.joined for funcdef in df(cell) ∩ df(c)) for c in competitors)...,
 		)
 	)
-	
-	error(123)
 end
 
 const _hint1 = "Combine all definitions into a single reactive cell."
